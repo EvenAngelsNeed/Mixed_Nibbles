@@ -1,2 +1,2 @@
 # Mixed Nibbles
- Beginer Scripts In Various Languages
+ Beginner Scripts In Various Languages
