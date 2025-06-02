@@ -9,25 +9,9 @@ This script just starts MiniKeyboard and resizes as needed.
 
 This Type:
 
-<style>
-table {
-    border-collapse: collapse;
-    margin-left: auto; 
-    margin-right: auto;
-}
-table, th, td {
-   border: none;
-}
-</style>
-
-
 | Keyboard | Software |
 |:--------:|:--------:|
 | ![MiniKeyboard](.images/MiniKeyBoard.png)  | ![MiniKeyboard Software](.images/MiniKeyBoard_Software.jpg)  |
-
-
-
-
 
 
 [Sikaicase Shop](https://sikaicase.com/products/one-handed-macro-mechanical-keyboard-12-keys-gaming-keyboard-fully-programmable-for-knobs-and-keys-osu-keypad-hotswap-keypad-with-rgb-for-game-editing-ps-12-keys-2-4g-3-layer-black-1?_pos=4&_sid=65ce219e3&_ss=r)
