@@ -1,2 +1,2 @@
-# Mixed_Nibbles
- Begginer Scripts In Various Languages
+# Mixed Nibbles
+ Beginer Scripts In Various Languages
