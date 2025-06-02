@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <style>
+    body{
+		margin: 50px;
+		font-family: arial, sans-serif;
+		font-size: 24px;
+		/* blur */
+		text-shadow: 1px 1px 8px black;
+		/* shadow */
+
+		/* text-shadow: 2px 2px 4px black;  */
+   
+    }
+    
+    table {
+
+		border-collapse: collapse;
+		#border: 1px solid grey;
+		margin: auto; 
+		
+    }
+    
+	table.scrolldown {
+		border-spacing: 0;
+		border-collapse: collapse;
+	}
+
+	/* To display the block as level element */
+	table.scrolldown tbody,
+	table.scrolldown thead {
+	display: block;
+	}
+
+
+
+
+	thead tr th{
+		height: 40px;
+		line-height: 40px;
+		text-align: left;
+		color: WhiteSmoke;
+
+		 
+		background-color: RebeccaPurple;
+		border: 1px solid grey;
+		border-collapse: collapse;
+
+	}
+	
+	thead th, tbody td {
+		min-width: 250px;
+		padding: 8px;
+	}
+
+	table.scrolldown tbody {
+
+		/* Set the height of table body */
+		height: 71vh;
+
+		/* Set vertical scroll */
+		overflow-y: auto; /**/
+
+		/* Hide the horizontal scroll */
+		overflow-x: hidden;
+	}
+
+
+	table td{
+	
+		border: 1px solid grey;
+	
+	}
+		
+#myInput {
+  background-image: url('images/something_found.png');
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  width: 80%;
+
+
+}
+        
+    </style>
+</head>
+
+<body>
+
+<div style = "margin: auto; width: 50%;">
+  <div style="text-align:center; font-size: 30px;">HTML Standard Colours</div>
+  <br>
+
+	<input type="text" id="myInput" onkeyup="filterTable()" placeholder="Search...">    
+  <br>
+  <br>
+</div>
+
+ 
+
+
+
+
+<table id="myTable" class="scrolldown">
+
+        <!-- Table head content -->
+        <thead>
+            <tr>
+                <th>Color \ Colour</th>
+                <th>Html Hex</th>
+
+            </tr>
+        </thead>
+
+        <!-- Table body content -->
+ 
+
+    <tbody>
+    
+    <tr>
+      <td style="background-color: #FFF8DC;">Cornsilk</td>
+      <td style="background-color: #FFF8DC;">#FFF8DC</td>
+    </tr>
+    <tr>
+      <td style="background-color: #DC143C;">Crimson</td>
+      <td style="background-color: #DC143C;">#DC143C</td>
+    </tr>
+    <tr>
+      <td style="background-color: #00FFFF;">Cyan</td>
+      <td style="background-color: #00FFFF;">#00FFFF</td>
+    </tr>
+    <tr style="color: WhiteSmoke;">
+      <td style="background-color: #00008B;">DarkBlue</td>
+      <td style="background-color: #00008B;">#00008B</td>
+    </tr>
+    <tr>
+      <td style="background-color: #008B8B;">DarkCyan</td>
+      <td style="background-color: #008B8B;">#008B8B</td>
+    </tr>
+    <tr>
+      <td style="background-color: #B8860B;">DarkGoldenRod</td>
+      <td style="background-color: #B8860B;">#B8860B</td>
+    </tr>
+    <tr>
+      <td style="background-color: #A9A9A9;">DarkGrey [..Gray]</td>
+      <td style="background-color: #A9A9A9;">#A9A9A9</td>
+    </tr>
+    <tr>
+      <td style="background-color: #006400;">DarkGreen</td>
+      <td style="background-color: #006400;">#006400</td>
+    </tr>
+    <tr>
+      <td style="background-color: #BDB76B;">DarkKhaki</td>
+      <td style="background-color: #BDB76B;">#BDB76B</td>
+    </tr>
+    <tr>
+      <td style="background-color: #8B008B;">DarkMagenta</td>
+      <td style="background-color: #8B008B;">#8B008B</td>
+    </tr>
+    <tr>
+      <td style="background-color: #556B2F;">DarkOliveGreen</td>
+      <td style="background-color: #556B2F;">#556B2F</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FF8C00;">DarkOrange</td>
+      <td style="background-color: #FF8C00;">#FF8C00</td>
+    </tr>
+    <tr>
+      <td style="background-color: #9932CC;">DarkOrchid</td>
+      <td style="background-color: #9932CC;">#9932CC</td>
+    </tr>
+    <tr style="color: WhiteSmoke;">
+      <td style="background-color: #8B0000;">DarkRed</td>
+      <td style="background-color: #8B0000;">#8B0000</td>
+    </tr>
+    <tr>
+      <td style="background-color: #E9967A;">DarkSalmon</td>
+      <td style="background-color: #E9967A;">#E9967A</td>
+    </tr>
+    <tr>
+      <td style="background-color: #8FBC8F;">DarkSeaGreen</td>
+      <td style="background-color: #8FBC8F;">#8FBC8F</td>
+    </tr>
+    <tr>
+      <td style="background-color: #483D8B;">DarkSlateBlue</td>
+      <td style="background-color: #483D8B;">#483D8B</td>
+    </tr>
+    <tr>
+      <td style="background-color: #2F4F4F;">DarkSlateGrey [..Gray]</td>
+      <td style="background-color: #2F4F4F;">#2F4F4F</td>
+    </tr>
+    <tr>
+      <td style="background-color: #00CED1;">DarkTurquoise</td>
+      <td style="background-color: #00CED1;">#00CED1</td>
+    </tr>
+    <tr>
+      <td style="background-color: #9400D3;">DarkViolet</td>
+      <td style="background-color: #9400D3;">#9400D3</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FF1493;">DeepPink</td>
+      <td style="background-color: #FF1493;">#FF1493</td>
+    </tr>
+    <tr>
+      <td style="background-color: #00BFFF;">DeepSkyBlue</td>
+      <td style="background-color: #00BFFF;">#00BFFF</td>
+    </tr>
+    <tr>
+      <td style="background-color: #696969;">DimGrey [..Gray]</td>
+      <td style="background-color: #696969;">#696969</td>
+    </tr>
+    <tr>
+      <td style="background-color: #1E90FF;">DodgerBlue</td>
+      <td style="background-color: #1E90FF;">#1E90FF</td>
+    </tr>
+    <tr>
+      <td style="background-color: #B22222;">FireBrick</td>
+      <td style="background-color: #B22222;">#B22222</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFFAF0;">FloralWhite</td>
+      <td style="background-color: #FFFAF0;">#FFFAF0</td>
+    </tr>
+    <tr>
+      <td style="background-color: #228B22;">ForestGreen</td>
+      <td style="background-color: #228B22;">#228B22</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FF00FF;">Fuchsia</td>
+      <td style="background-color: #FF00FF;">#FF00FF</td>
+    </tr>
+    <tr>
+      <td style="background-color: #DCDCDC;">Gainsboro</td>
+      <td style="background-color: #DCDCDC;">#DCDCDC</td>
+    </tr>
+    <tr>
+      <td style="background-color: #F8F8FF;">GhostWhite</td>
+      <td style="background-color: #F8F8FF;">#F8F8FF</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFD700;">Gold</td>
+      <td style="background-color: #FFD700;">#FFD700</td>
+    </tr>
+    <tr>
+      <td style="background-color: #DAA520;">GoldenRod</td>
+      <td style="background-color: #DAA520;">#DAA520</td>
+    </tr>
+    <tr>
+      <td style="background-color: #808080;">Grey [Gray]</td>
+      <td style="background-color: #808080;">#808080</td>
+    </tr>
+    <tr>
+      <td style="background-color: #008000;">Green</td>
+      <td style="background-color: #008000;">#008000</td>
+    </tr>
+    <tr>
+      <td style="background-color: #ADFF2F;">GreenYellow</td>
+      <td style="background-color: #ADFF2F;">#ADFF2F</td>
+    </tr>
+    <tr>
+      <td style="background-color: #F0FFF0;">HoneyDew</td>
+      <td style="background-color: #F0FFF0;">#F0FFF0</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FF69B4;">HotPink</td>
+      <td style="background-color: #FF69B4;">#FF69B4</td>
+    </tr>
+    <tr>
+      <td style="background-color: #CD5C5C;">IndianRed</td>
+      <td style="background-color: #CD5C5C;">#CD5C5C</td>
+    </tr>
+    <tr style="color: WhiteSmoke;">
+      <td style="background-color: #4B0082;">Indigo</td>
+      <td style="background-color: #4B0082;">#4B0082</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFFFF0;">Ivory</td>
+      <td style="background-color: #FFFFF0;">#FFFFF0</td>
+    </tr>
+    <tr>
+      <td style="background-color: #F0E68C;">Khaki</td>
+      <td style="background-color: #F0E68C;">#F0E68C</td>
+    </tr>
+    <tr>
+      <td style="background-color: #E6E6FA;">Lavender</td>
+      <td style="background-color: #E6E6FA;">#E6E6FA</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFF0F5;">LavenderBlush</td>
+      <td style="background-color: #FFF0F5;">#FFF0F5</td>
+    </tr>
+    <tr>
+      <td style="background-color: #7CFC00;">LawnGreen</td>
+      <td style="background-color: #7CFC00;">#7CFC00</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFFACD;">LemonChiffon</td>
+      <td style="background-color: #FFFACD;">#FFFACD</td>
+    </tr>
+    <tr>
+      <td style="background-color: #ADD8E6;">LightBlue</td>
+      <td style="background-color: #ADD8E6;">#ADD8E6</td>
+    </tr>
+    <tr>
+      <td style="background-color: #F08080;">LightCoral</td>
+      <td style="background-color: #F08080;">#F08080</td>
+    </tr>
+    <tr>
+      <td style="background-color: #E0FFFF;">LightCyan</td>
+      <td style="background-color: #E0FFFF;">#E0FFFF</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FAFAD2;">LightGoldenRodYellow</td>
+      <td style="background-color: #FAFAD2;">#FAFAD2</td>
+    </tr>
+    <tr>
+      <td style="background-color: #D3D3D3;">LightGrey [..Gray]</td>
+      <td style="background-color: #D3D3D3;">#D3D3D3</td>
+    </tr>
+    <tr>
+      <td style="background-color: #90EE90;">LightGreen</td>
+      <td style="background-color: #90EE90;">#90EE90</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFB6C1;">LightPink</td>
+      <td style="background-color: #FFB6C1;">#FFB6C1</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFA07A;">LightSalmon</td>
+      <td style="background-color: #FFA07A;">#FFA07A</td>
+    </tr>
+    <tr>
+      <td style="background-color: #20B2AA;">LightSeaGreen</td>
+      <td style="background-color: #20B2AA;">#20B2AA</td>
+    </tr>
+    <tr>
+      <td style="background-color: #87CEFA;">LightSkyBlue</td>
+      <td style="background-color: #87CEFA;">#87CEFA</td>
+    </tr>
+    <tr>
+      <td style="background-color: #778899;">LightSlateGrey [..Gray]</td>
+      <td style="background-color: #778899;">#778899</td>
+    </tr>
+    <tr>
+      <td style="background-color: #B0C4DE;">LightSteelBlue</td>
+      <td style="background-color: #B0C4DE;">#B0C4DE</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFFFE0;">LightYellow</td>
+      <td style="background-color: #FFFFE0;">#FFFFE0</td>
+    </tr>
+    <tr>
+      <td style="background-color: #00FF00;">Lime</td>
+      <td style="background-color: #00FF00;">#00FF00</td>
+    </tr>
+    <tr>
+      <td style="background-color: #32CD32;">LimeGreen</td>
+      <td style="background-color: #32CD32;">#32CD32</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FAF0E6;">Linen</td>
+      <td style="background-color: #FAF0E6;">#FAF0E6</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FF00FF;">Magenta</td>
+      <td style="background-color: #FF00FF;">#FF00FF</td>
+    </tr>
+    <tr style="color: WhiteSmoke;">
+      <td style="background-color: #800000;">Maroon</td>
+      <td style="background-color: #800000;">#800000</td>
+    </tr>
+    <tr>
+      <td style="background-color: #66CDAA;">MediumAquaMarine</td>
+      <td style="background-color: #66CDAA;">#66CDAA</td>
+    </tr>
+    <tr style="color: WhiteSmoke;">
+      <td style="background-color: #0000CD;">MediumBlue</td>
+      <td style="background-color: #0000CD;">#0000CD</td>
+    </tr>
+    <tr>
+      <td style="background-color: #BA55D3;">MediumOrchid</td>
+      <td style="background-color: #BA55D3;">#BA55D3</td>
+    </tr>
+    <tr>
+      <td style="background-color: #9370DB;">MediumPurple</td>
+      <td style="background-color: #9370DB;">#9370DB</td>
+    </tr>
+    <tr>
+      <td style="background-color: #3CB371;">MediumSeaGreen</td>
+      <td style="background-color: #3CB371;">#3CB371</td>
+    </tr>
+    <tr>
+      <td style="background-color: #7B68EE;">MediumSlateBlue</td>
+      <td style="background-color: #7B68EE;">#7B68EE</td>
+    </tr>
+    <tr>
+      <td style="background-color: #00FA9A;">MediumSpringGreen</td>
+      <td style="background-color: #00FA9A;">#00FA9A</td>
+    </tr>
+    <tr>
+      <td style="background-color: #48D1CC;">MediumTurquoise</td>
+      <td style="background-color: #48D1CC;">#48D1CC</td>
+    </tr>
+    <tr>
+      <td style="background-color: #C71585;">MediumVioletRed</td>
+      <td style="background-color: #C71585;">#C71585</td>
+    </tr>
+    <tr style="color: WhiteSmoke;">
+      <td style="background-color: #191970;">MidnightBlue</td>
+      <td style="background-color: #191970;">#191970</td>
+    </tr>
+    <tr>
+      <td style="background-color: #F5FFFA;">MintCream</td>
+      <td style="background-color: #F5FFFA;">#F5FFFA</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFE4E1;">MistyRose</td>
+      <td style="background-color: #FFE4E1;">#FFE4E1</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFE4B5;">Moccasin</td>
+      <td style="background-color: #FFE4B5;">#FFE4B5</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFDEAD;">NavajoWhite</td>
+      <td style="background-color: #FFDEAD;">#FFDEAD</td>
+    </tr>
+    <tr style="color: WhiteSmoke;">
+      <td style="background-color: #000080;">Navy</td>
+      <td style="background-color: #000080;">#000080</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FDF5E6;">OldLace</td>
+      <td style="background-color: #FDF5E6;">#FDF5E6</td>
+    </tr>
+    <tr>
+      <td style="background-color: #808000;">Olive</td>
+      <td style="background-color: #808000;">#808000</td>
+    </tr>
+    <tr>
+      <td style="background-color: #6B8E23;">OliveDrab</td>
+      <td style="background-color: #6B8E23;">#6B8E23</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFA500;">Orange</td>
+      <td style="background-color: #FFA500;">#FFA500</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FF4500;">OrangeRed</td>
+      <td style="background-color: #FF4500;">#FF4500</td>
+    </tr>
+    <tr>
+      <td style="background-color: #DA70D6;">Orchid</td>
+      <td style="background-color: #DA70D6;">#DA70D6</td>
+    </tr>
+    <tr>
+      <td style="background-color: #EEE8AA;">PaleGoldenRod</td>
+      <td style="background-color: #EEE8AA;">#EEE8AA</td>
+    </tr>
+    <tr>
+      <td style="background-color: #98FB98;">PaleGreen</td>
+      <td style="background-color: #98FB98;">#98FB98</td>
+    </tr>
+    <tr>
+      <td style="background-color: #AFEEEE;">PaleTurquoise</td>
+      <td style="background-color: #AFEEEE;">#AFEEEE</td>
+    </tr>
+    <tr>
+      <td style="background-color: #DB7093;">PaleVioletRed</td>
+      <td style="background-color: #DB7093;">#DB7093</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFEFD5;">PapayaWhip</td>
+      <td style="background-color: #FFEFD5;">#FFEFD5</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFDAB9;">PeachPuff</td>
+      <td style="background-color: #FFDAB9;">#FFDAB9</td>
+    </tr>
+    <tr>
+      <td style="background-color: #CD853F;">Peru</td>
+      <td style="background-color: #CD853F;">#CD853F</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFC0CB;">Pink</td>
+      <td style="background-color: #FFC0CB;">#FFC0CB</td>
+    </tr>
+    <tr>
+      <td style="background-color: #DDA0DD;">Plum</td>
+      <td style="background-color: #DDA0DD;">#DDA0DD</td>
+    </tr>
+    <tr>
+      <td style="background-color: #B0E0E6;">PowderBlue</td>
+      <td style="background-color: #B0E0E6;">#B0E0E6</td>
+    </tr>
+    <tr style="color: WhiteSmoke;">
+      <td style="background-color: #800080;">Purple</td>
+      <td style="background-color: #800080;">#800080</td>
+    </tr>
+    <tr style="color: WhiteSmoke;">
+      <td style="background-color: #663399;">RebeccaPurple</td>
+      <td style="background-color: #663399;">#663399</td>
+    </tr>
+    <tr style="color: WhiteSmoke;">
+      <td style="background-color: #FF0000;">Red</td>
+      <td style="background-color: #FF0000;">#FF0000</td>
+    </tr>
+    <tr>
+      <td style="background-color: #BC8F8F;">RosyBrown</td>
+      <td style="background-color: #BC8F8F;">#BC8F8F</td>
+    </tr>
+    <tr>
+      <td style="background-color: #4169E1;">RoyalBlue</td>
+      <td style="background-color: #4169E1;">#4169E1</td>
+    </tr>
+    <tr>
+      <td style="background-color: #8B4513;">SaddleBrown</td>
+      <td style="background-color: #8B4513;">#8B4513</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FA8072;">Salmon</td>
+      <td style="background-color: #FA8072;">#FA8072</td>
+    </tr>
+    <tr>
+      <td style="background-color: #F4A460;">SandyBrown</td>
+      <td style="background-color: #F4A460;">#F4A460</td>
+    </tr>
+    <tr>
+      <td style="background-color: #2E8B57;">SeaGreen</td>
+      <td style="background-color: #2E8B57;">#2E8B57</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFF5EE;">SeaShell</td>
+      <td style="background-color: #FFF5EE;">#FFF5EE</td>
+    </tr>
+    <tr>
+      <td style="background-color: #A0522D;">Sienna</td>
+      <td style="background-color: #A0522D;">#A0522D</td>
+    </tr>
+    <tr>
+      <td style="background-color: #C0C0C0;">Silver</td>
+      <td style="background-color: #C0C0C0;">#C0C0C0</td>
+    </tr>
+    <tr>
+      <td style="background-color: #87CEEB;">SkyBlue</td>
+      <td style="background-color: #87CEEB;">#87CEEB</td>
+    </tr>
+    <tr>
+      <td style="background-color: #6A5ACD;">SlateBlue</td>
+      <td style="background-color: #6A5ACD;">#6A5ACD</td>
+    </tr>
+    <tr>
+      <td style="background-color: #708090;">SlateGrey [..Gray]</td>
+      <td style="background-color: #708090;">#708090</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFFAFA;">Snow</td>
+      <td style="background-color: #FFFAFA;">#FFFAFA</td>
+    </tr>
+    <tr>
+      <td style="background-color: #00FF7F;">SpringGreen</td>
+      <td style="background-color: #00FF7F;">#00FF7F</td>
+    </tr>
+    <tr>
+      <td style="background-color: #4682B4;">SteelBlue</td>
+      <td style="background-color: #4682B4;">#4682B4</td>
+    </tr>
+    <tr>
+      <td style="background-color: #D2B48C;">Tan</td>
+      <td style="background-color: #D2B48C;">#D2B48C</td>
+    </tr>
+    <tr>
+      <td style="background-color: #008080;">Teal</td>
+      <td style="background-color: #008080;">#008080</td>
+    </tr>
+    <tr>
+      <td style="background-color: #D8BFD8;">Thistle</td>
+      <td style="background-color: #D8BFD8;">#D8BFD8</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FF6347;">Tomato</td>
+      <td style="background-color: #FF6347;">#FF6347</td>
+    </tr>
+    <tr>
+      <td style="background-color: #40E0D0;">Turquoise</td>
+      <td style="background-color: #40E0D0;">#40E0D0</td>
+    </tr>
+    <tr>
+      <td style="background-color: #EE82EE;">Violet</td>
+      <td style="background-color: #EE82EE;">#EE82EE</td>
+    </tr>
+    <tr>
+      <td style="background-color: #F5DEB3;">Wheat</td>
+      <td style="background-color: #F5DEB3;">#F5DEB3</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFFFFF;">White</td>
+      <td style="background-color: #FFFFFF;">#FFFFFF</td>
+    </tr>
+    <tr>
+      <td style="background-color: #F5F5F5;">WhiteSmoke</td>
+      <td style="background-color: #F5F5F5;">#F5F5F5</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFFF00;">Yellow</td>
+      <td style="background-color: #FFFF00;">#FFFF00</td>
+    </tr>
+    <tr>
+      <td style="background-color: #9ACD32;">YellowGreen</td>
+      <td style="background-color: #9ACD32;">#9ACD32</td>
+    </tr> 
+        </tbody>
+    </table>
+  
+
+
+
+
+
+<script>
+
+
+function filterTable() {
+
+	var input, filter, table, tr, td, i, txtValue;
+  
+	input = document.getElementById("myInput");
+  
+	filter = input.value.toUpperCase();
+  
+	table = document.getElementById("myTable");
+  
+    // Here use tr:not headers-sub
+    // tr = table.getElementsByTagName("tr");  
+	tr = table.getElementsByTagName("tr");
+	//var tr = table.rows;
+
+
+  for (i = 0; i < tr.length; i++) {
+  
+	td = tr[i].getElementsByTagName("td");
+    
+		for (var j = 0; j < td.length; j++) {
+		
+			txtValue = td[j].textContent || td[j].innerText;
+		  
+			if (txtValue.toUpperCase().indexOf(filter) > -1) {
+		  
+				tr[i].style.display = "";
+				break;
+        
+      }
+      
+      else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+</script>
+
+  
+
+    <body>
+
+</html>
