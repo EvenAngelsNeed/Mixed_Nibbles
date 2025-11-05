@@ -1,5 +1,5 @@
-;Requires Autohotkey v2
-;SingleInstance
+#Requires Autohotkey v2
+#SingleInstance
 
 ; The program 'MINI_KEYBOARD.exe' always starts maximised and doesn't save its state.
 ; This script just starts MiniKeyboard and resizes as needed.

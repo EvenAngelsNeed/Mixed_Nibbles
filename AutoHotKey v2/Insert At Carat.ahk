@@ -30,7 +30,6 @@ ControlSend "{End}", Edit1
 
 InsertAtCaret(*)
 {
-	textCopt := Edit2.value
 	ControlSendText Edit2.Value, "Edit1"
 }
 
