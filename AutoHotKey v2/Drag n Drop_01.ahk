@@ -2,8 +2,9 @@
 #SingleInstance Force
 
 
+; We May Need To UnElevate Script - Due to Win11 Drag & Drop Issues.
+; Though Better To Use "Drag & Drop Between Elevations_01.ahk"
 
-; UnElevate Script - Due to Win11 Drag & Drop Issues.
 If A_IsAdmin {
 
 	;MsgBox A_IsAdmin
